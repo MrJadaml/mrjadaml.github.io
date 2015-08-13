@@ -1,0 +1,132 @@
+/* -------------- CSS Resets -------------- */
+
+html,body,div,span,applet,object,iframe,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,label,legend,p,blockquote,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}body{line-height:1;color:black;background:white;}:focus{outline:0;}table{border-collapse:collapse;border-spacing:0;}caption,th,td{text-align:left;font-weight:normal;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul{list-style:none;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}blockquote:before,blockquote:after,q:before,q:after{content:"";}blockquote,q{quotes:"" "";}abbr,acronym{border:0;}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/* -------------- Main CSS -------------- */
+
+/* Multi selectors */
+html, body {
+  /* setting page defaults */
+  width: 100%;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-family: "helvetica neue", helvetica;
+
+  color: white;
+
+  /* Default background */
+  background-color: black;
+
+  /* Background image */
+  background:
+    linear-gradient(
+       rgba(0, 0, 0, 0.83),
+       rgba(0, 0, 0, 0.83)
+     ),
+     url(../learn-to-code/img/Chl8GSo.jpg) repeat fixed;
+}
+
+
+h1 {
+  font-weight: 100;
+  font-size: 80px;
+  letter-spacing: 5px;
+
+  text-align: center;
+  margin: 100px auto 0 auto;
+
+  padding: 40px;
+  border: solid white;
+  width: 50%;
+}
+
+h2 {
+  color: black;
+  font-weight: 100;
+  font-size: 40px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.white-box {
+  width: 25%;
+  padding: 20px 10px;
+
+  /* white background with a little transparency */
+  background: rgba(255, 255, 255, .8);
+
+  /* centers and gives it a buffer below */
+  margin: 0 auto 20px auto;
+}
+
+nav {
+  padding-top: 100px;
+}
+
+.title-nav {
+  font-size: 40px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+ul {
+  text-align: center;
+}
+
+li {
+  /* Block-level & Inline Elements */
+  display: inline;
+
+  /* creates border below nav text */
+  border-bottom: solid orange;
+
+  /* Spaces out sides of bottom borders */
+  margin: 6px;
+
+  /* Pushes down bottom border */
+  padding-bottom: 10px;
+}
+
+/* link animation */
+li:hover {
+  padding-bottom: 12px;
+  transition: 0.1s ease-out;
+}
+
+a {
+  color: white;
+  font-size: 24px;
+
+  /* removes link underlines */
+  text-decoration: none;
+}
+
+footer {
+  font-size: 18px;
+  text-align: center;
+
+  /* creates border at top of footer for seperation */
+  border-top: 2px solid rgba(0, 0, 0, .2);
+
+  /* pushes text off of top border */
+  padding: 12px 0;
+
+  /* gives the footer some space above it */
+  margin-top: 200px;
+
+  /* Darkens footer while still transparent */
+  background: rgba(0, 0, 0, .3)
+}
+
+.galvanize-link {
+  font-size: 18px;
+  color: orange;
+}
